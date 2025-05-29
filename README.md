@@ -1,2 +1,3 @@
-# cv
-CV in English &amp; German
+# CV
+
+CV in English and German.
