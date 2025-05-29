@@ -1,6 +1,6 @@
 {
     "name": "LaTeX",
-    "build": { 
+    "build": {
         "dockerfile": "Dockerfile",
         "args": {
             "UID": "1000",
@@ -11,25 +11,27 @@
     "remoteUser": "dev",
     "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/${localWorkspaceFolderBasename},type=bind",
-    "forwardPorts": [9000],
+    "forwardPorts": [
+        9000
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
-				"vscode-icons-team.vscode-icons",
+                "vscode-icons-team.vscode-icons",
                 "ms-azuretools.vscode-docker",
                 "GitHub.copilot",
                 "continue.continue",
-				"eamodio.gitlens",
-				"mhutchie.git-graph",
-				"johnpapa.vscode-peacock",
-				"shardulm94.trailing-spaces",
-				"mathematic.vscode-latex",
+                "eamodio.gitlens",
+                "mhutchie.git-graph",
+                "johnpapa.vscode-peacock",
+                "shardulm94.trailing-spaces",
+                "mathematic.vscode-latex",
                 "mathematic.vscode-pdf",
-				"james-yu.latex-workshop"
+                "james-yu.latex-workshop"
             ]
         },
         "settings": {
-            "terminal.integrated.defaultProfile.linux": "/bin/zsh",
+            "terminal.integrated.defaultProfile.linux": "zsh",
             "editor.formatOnSave": true,
             "eslint.format.enable": true,
             "latex-workshop.linting.chktex.enabled": true,
