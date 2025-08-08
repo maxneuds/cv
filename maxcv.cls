@@ -207,7 +207,7 @@
 
 % Define single skill tag box
 \newtcbox{\SkillTag}{nobeforeafter, colframe=black!50!gray, colback=gray!10,
-    boxrule=0.4pt, arc=4pt, boxsep=2pt, left=4pt, right=4pt, top=2pt, bottom=2pt,
+    boxrule=0.4pt, arc=4pt, boxsep=2pt, left=4pt, right=4pt, top=2pt, bottom=2pt, height=1.5em,
     fontupper=\sffamily\small}
 
 % ========== Skill Macros ==========
@@ -220,6 +220,7 @@
 }
 % Inline Skill Tag List (no section title)
 \NewDocumentCommand{\SkillTagsInline}{m}{%
+    \mbox{}\\
     \foreach \skill in {#1} {%
             \SkillTag{\skill} \hspace{0.4em}%
         }%
@@ -231,4 +232,5 @@
 
 % Safe macro for C++
 \newcommand{\cplusplus}{C\kern-.1em\raisebox{0.2ex}{\texttt{++}}}
+\newcommand{\csharp}{C\raisebox{-0.1ex}{\large\texttt{\#}}}
 

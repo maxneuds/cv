@@ -11,3 +11,6 @@
 .vscode/
 *.swp
 .DS_Store
+
+# Ignore my own personal files
+cv-max-en.tex
